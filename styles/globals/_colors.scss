@@ -1,4 +1,35 @@
 :root {
-  --bg-primary: hsl(0, 0%, 10%);
-  --text-color: hsl(0, 0%, 90%);
+  --bg-primary-one: #141414;
+
+  --bg-primary-two: #363636;
+
+  --text-accent-one: #1f2733;
+
+  --text-accent-two: #8c2155;
+
+  --text-accent-three: hsl(165, 78%, 41%);
+}
+
+.bg-primary-one {
+  background-color: var(--bg-primary-one);
+}
+
+.bg-primary-two {
+  background-color: var(--bg-primary-two);
+}
+
+.bg-primary-three {
+  background-color: var(--text-accent-three);
+}
+
+.txt-one {
+  color: var(--text-accent-one);
+}
+
+.txt-two {
+  color: var(--text-accent-two);
+}
+
+.txt-three {
+  color: var(--text-accent-three);
 }
