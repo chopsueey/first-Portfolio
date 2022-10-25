@@ -1,0 +1,136 @@
+// Gallery for projects
+// Divs containing an image and positioned via Grid
+
+.img-box {
+  display: flex;
+  justify-content: center;
+  position: relative; // Position: relative for the button
+  img {
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: scale 500ms 100ms ease, opacity 350ms 100ms linear,
+      filter 350ms 100ms linear;
+  }
+}
+
+.img-gallery {
+  display: grid;
+  gap: 20px;
+  row-gap: 40px;
+}
+
+.img-gallery:has(img:hover) img:not(:hover) {
+  scale: 0.8;
+  opacity: 0.7;
+  filter: blur(2px);
+}
+
+.img-box img:hover {
+  transition: scale 700ms 100ms ease, opacity 350ms 100ms linear,
+    filter 350ms 100ms linear;
+  scale: 1.2;
+}
+
+// Condition for keeping the effect when hovering over the button of the current hovered image
+
+.img-gallery:has(.button:hover) .img-box:not(:has(.button:hover)) img {
+  scale: 0.8;
+  opacity: 0.7;
+  filter: blur(2px);
+}
+
+.img-box:has(.button:hover) img {
+  transition: scale 700ms 100ms ease, opacity 350ms 100ms linear,
+    filter 350ms 100ms linear;
+  scale: 1.2;
+}
+
+.img-box:has(img:hover) .button {
+  opacity: 100;
+  scale: 1;
+}
+
+// Button for each image
+
+.button {
+  height: 15%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 500ms 100ms ease, scale 700ms 100ms ease;
+  scale: 0.5;
+  opacity: 0;
+  position: absolute;
+  right: 8%;
+  bottom: -2%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 10px 0 0 0;
+  padding: 0 20px;
+  color: #ffffff;
+  background-color: hsl(165, 78%, 41%);
+  text-shadow: 2px 2px 4px black;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0.6)
+  );
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  a {
+    font-size: 1rem;
+  }
+}
+
+.button:hover {
+  opacity: 100;
+  scale: 1;
+  background-color: hsl(165, 59%, 50%);
+}
+
+.button:active {
+  box-shadow: inset -3px -3px 3px rgba(255, 255, 255, 0.6),
+    inset 3px 3px 2px rgba(0, 0, 0, 0.6);
+}
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 400px) {
+  .button {
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .img-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .img-box {
+    img {
+      width: 90%;
+    }
+    .button {
+      right: 6%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .button {
+    a {
+      font-size: 1.8rem;
+    }
+  }
+}

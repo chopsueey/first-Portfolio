@@ -1,3 +1,34 @@
-@forward 'globals';
-@forward 'util';
-@forward 'elements';
+@forward "globals";
+@forward "util";
+@forward "elements";
+@forward "sections";
+
+// MAIN STYLE, THAT CURRENTLY DOESN'T FIT IN A SPECIFIC SCSS-FILE (COULD CHANGE IN THE FUTURE)
+
+@media screen and (min-width: 1000px) {
+  main {
+    margin-top: 100px;
+  }
+  body {
+    background-image: url(../../images/kisspng-graphic-design-changed.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 5%;
+    background-size: 90%;
+    backdrop-filter: blur(3px);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section-height {
+    min-height: 80vh;
+  }
+}
+
+// .bg-style-hero {
+  //   background-image: url(../images/kisspng-graphic-design-changed.png);
+  //   background-repeat: no-repeat;
+  //   background-position-x: center;
+  //   background-position-y: 102%;
+  //   background-size: 90%;
+  //   backdrop-filter: blur(3px);
+  // }

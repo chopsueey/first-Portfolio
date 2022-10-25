@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
 
@@ -32,11 +32,20 @@
     <title>Document</title>
   </head>
 
+  <!-- ###################################
+       1. Header/Navbar
+       2. Introduction
+       3. About me
+       4. Projects
+       5. Contact
+       6. Footer 
+       ################################### -->
+
   <body>
-    <!-- NAVBAR -->
+    <!-- HEADER/NAVBAR -->
     <header>
       <nav
-        class="navbar navbar-dark navbar-expand-md bg-primary-one fixed-top border-bottom-accent"
+        class="navbar navbar-dark navbar-expand-lg bg-primary-one border-bottom-accent"
       >
         <div class="container-fluid">
           <a class="navbar-brand text-white" href="#"
@@ -76,33 +85,34 @@
               <ul class="navbar-nav justify-content-center flex-grow-1">
                 <li class="nav-item">
                   <h5>
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >home</a
-                    >
+                    <a class="nav-link" href="#">home</a>
                   </h5>
                 </li>
                 <li class="nav-item">
                   <h5>
-                    <a class="nav-link" href="./projects.html">projects</a>
+                    <a class="nav-link" href="#about-me">about</a>
                   </h5>
                 </li>
                 <li class="nav-item">
                   <h5>
-                    <a class="nav-link" href="./contact.html">contact </a>
+                    <a class="nav-link" href="#projects">projects</a>
                   </h5>
                 </li>
-                <li class="nav-item d-md-none border-top pt-3">
+                <li class="nav-item">
                   <h5>
-                    <a class="nav-link txt-three" href="#"
+                    <a class="nav-link" href="#contact">contact </a>
+                  </h5>
+                </li>
+                <li class="nav-item d-lg-none border-top pt-3">
+                  <h5>
+                    <a class="txt-three" href="#"
                       ><i class="fa-brands fa-twitter me-1"></i> twitter</a
                     >
                   </h5>
                 </li>
-                <li class="nav-item d-md-none">
+                <li class="nav-item d-lg-none">
                   <h5>
-                    <a
-                      class="nav-link txt-three"
-                      href="https://github.com/chopsueey"
+                    <a class="txt-three" href="https://github.com/chopsueey"
                       ><i class="fa-brands fa-github me-1"></i> github</a
                     >
                   </h5>
@@ -110,7 +120,7 @@
               </ul>
             </div>
           </div>
-          <div class="d-none d-md-flex">
+          <div class="d-none d-lg-flex">
             <h5 class="px-2">
               <a class="link txt-three" href="https://github.com/chopsueey"
                 ><i class="fa-brands fa-github me-1"></i> github</a
@@ -125,61 +135,61 @@
         </div>
       </nav>
     </header>
-    <!-- MAINCONTENT -->
 
-    <main>
-      <!-- <img class="bg-design" src="./images/kisspng-graphic-design-changed.png" alt=""> -->
-      <div class="container pt-3 pt-md-5">
-        <section class="row justify-content-around">
+    <main class="border-bottom-accent">
+      <!-- INTRODUCTION -->
+      <div
+        class="container my-md-5 px-md-0 py-3 py-md-5 section-height bg-style-hero"
+      >
+        <section class="row d-flex justify-content-around">
           <div
-            class="col-12 col-md-4 p-3 py-0 text-center text-md-start d-flex flex-column"
+            class="col-12 col-md-6 col-lg-4 px-0 text-center text-md-start d-flex flex-column"
           >
             <div class="col">
-              <h1 class="text-white">Hi, I'm Marius.</h1>
+              <h1 class="text-white hero-heading">Hi, I'm Marius.</h1>
               <h5 class="text-white">
                 I'm 29, from Germany and I study webdevelopment.
               </h5>
             </div>
+          </div>
+          <div class="col-12 col-md-6 p-4 p-md-0">
+            <img
+              class="portrait"
+              src="./images/2016-RstMailand-MM-(49)4.png"
+              alt=""
+            />
+          </div>
+        </section>
+      </div>
+
+      <!-- ABOUT ME -->
+
+      <div id="about-me" class="container">
+        <div class="row border-bottom-accent">
+          <div class="col">
+            <h3 class="text-white my-3">about me</h3>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container p-3 p-md-5 mt-lg-3 section-height d-flex justify-content-around flex-column"
+      >
+        <section
+          class="row flex-column-reverse flex-lg-row justify-content-lg-around mt-3"
+        >
+          <div class="col-12 col-md-11 col-lg-4 p-4 py-0 px-md-3 py-lg-3">
             <div class="col text-md-start mt-4 mt-lg-0">
               <h4 class="txt-three">Skills</h4>
               <p class="text-white">
                 HTML, CSS (SCSS) <br />
                 JS, Python <br />
-                Bootstrap
+                NPM, Git, Bootstrap
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-8 col-lg-6 text-center">
-            <!-- <div class="backdrop-layer"></div> -->
-            <img
-              class="portrait"
-              src="./images/2016-mailand-rst-portrait.jpg"
-              alt=""
-            />
-          </div>
-        </section>
-        <section
-          class="row flex-column-reverse flex-lg-row justify-content-lg-around mt-3"
-        >
-          <div class="col-12 col-md-11 col-lg-4 p-4 px-md-3 py-lg-4">
-            <div class="card bg-primary-two" style="width: 18rem">
-              <img
-                src="./images/2016-mailand-rst-portrait.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-white">My current project</h5>
-                <p class="card-text text-white">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-secondary bg-primary-three">Check it out</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-11 col-lg-6 p-3">
-            <h4 class="text-white">About me</h4>
+          <div class="col-12 col-md-11 col-lg-6 py-3 px-4 px-md-3 px-lg-0">
+            <h4 class="text-white">I'm ...</h4>
             <p class="text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
               dolores laudantium perferendis inventore, nulla accusamus quia qui
@@ -191,21 +201,191 @@
               aperiam autem, voluptatibus qui eos quasi ipsum saepe ab corrupti
               nostrum obcaecati placeat nam, sint quae.
             </p>
+          </div>
+        </section>
+        <section
+          class="row flex-column-reverse flex-lg-row justify-content-lg-around mt-3"
+        >
+          <div class="col-12 col-md-11 col-lg-4 p-4 py-0 px-md-3 py-lg-3">
+            <div class="col text-md-start mt-4 mt-lg-0">
+              <h4 class="txt-three">Service</h4>
+              <p class="text-white">
+                HTML, CSS (SCSS) <br />
+                JS, Python <br />
+                NPM, Git, Bootstrap
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-11 col-lg-6 py-3 px-4 px-md-3 px-lg-0">
+            <h4 class="text-white">I offer ...</h4>
             <p class="text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
-              ducimus adipisci quia nam ipsum eum, fugiat nemo cum odio
-              molestiae amet voluptates quis numquam dicta!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+              dolores laudantium perferendis inventore, nulla accusamus quia qui
+              ea exercitationem molestias veniam provident doloribus voluptatum.
+              Ab.
+            </p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+              aperiam autem, voluptatibus qui eos quasi ipsum saepe ab corrupti
+              nostrum obcaecati placeat nam, sint quae.
             </p>
           </div>
         </section>
-        <section class="row">
-          <div class="col-12 col-md-8">
-            <h4 class="text-white">My latest works</h4>
-          </div>
-        </section>
       </div>
+
+      <!-- DIVIDER -->
+
+      <div id="projects" class="container">
+        <div class="row border-bottom-accent">
+          <div class="col">
+            <h3 class="text-white my-3">projects</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+
+      <section class="container my-5 p-5">
+        <div class="img-gallery">
+          <div class="col img-box">
+            <div class="button"><a class="link" href="">More...</a></div>
+            <img
+              class="rounded-5"
+              src="./images/Screenshot from 2022-10-24 11-00-59.png"
+              alt=""
+            />
+          </div>
+          <div class="col img-box">
+            <div class="button"><a class="link" href="">More...</a></div>
+            <img
+              class="rounded-5"
+              src="https://source.unsplash.com/random"
+              alt=""
+            />
+          </div>
+          <div class="col img-box">
+            <div class="button"><a class="link" href="">More...</a></div>
+            <img
+              class="rounded-5"
+              src="https://source.unsplash.com/random"
+              alt=""
+            />
+          </div>
+          <div class="col img-box">
+            <div class="button"><a class="link" href="">More...</a></div>
+            <img
+              class="rounded-5"
+              src="https://source.unsplash.com/random"
+              alt=""
+            />
+          </div>
+          <div class="col img-box">
+            <div class="button"><a class="link" href="">More...</a></div>
+            <img
+              class="rounded-5"
+              src="https://source.unsplash.com/random"
+              alt=""
+            />
+          </div>
+          <div class="col img-box">
+            <div class="button"><a class="link" href="">More...</a></div>
+            <img
+              class="rounded-5"
+              src="https://source.unsplash.com/random"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- DIVIDER -->
+
+      <div id="contact" class="container">
+        <div class="row border-bottom-accent">
+          <div class="col">
+            <h3 class="text-white my-3">contact</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+
+      <section class="container my-5 p-3 p-md-5">
+        <div class="row text-white d-flex justify-content-around">
+          <div
+            class="col-12 col-lg-6 text-center d-lg-flex justify-content-lg-start align-items-center"
+          >
+            <h1 class="contact-heading mb-4">Get in touch</h1>
+            <p></p>
+          </div>
+          <div class="col-10 col-lg-6 bg-primary-two rounded-3 p-3">
+            <form action="#">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First Name"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last Name"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Email (e.g. hello@provider.com)"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Message Subject"
+                />
+                <textarea
+                  class="col rounded-3 form-control"
+                  name=""
+                  id=""
+                  rows="5"
+                  placeholder="Your message"
+                ></textarea>
+
+                <button class="button-two" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="container-fluid"></footer>
+
+    <!-- FOOTER -->
+
+    <footer class="container mt-5 p-5 pb-0 min-vh-20">
+      <div class="row text-white text-center d-flex justify-content-around">
+        <div class="col-12 col-md-4 p-2">
+          <ul class="text-start p-0">
+            <li>Marius Meyer</li>
+            <li>Random Street 123.</li>
+            <li>666666 Random City</li>
+            <li>04509345094285</li>
+            <li>meyer-marius@live.de</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <ul class="text-start text-md-end p-0">
+            <li>Link material</li>
+            <li>Link material</li>
+            <li>Link material</li>
+            <li>Link material</li>
+            <li>Link material</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-5 text-white text-center">
+        <div class="col">
+          <p class="text-muted">-- &copy; Marius 2022 --</p>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

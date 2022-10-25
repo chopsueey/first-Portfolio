@@ -1,3 +1,23 @@
 @forward 'border';
-@forward 'main';
-@forward 'images';
+@forward 'links';
+
+a {
+    color: white;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  .nav-link {
+    color: white;
+  }
+  
+  .nav-link:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .link:hover {
+    color: white;
+  }

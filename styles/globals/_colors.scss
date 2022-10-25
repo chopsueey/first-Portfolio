@@ -1,14 +1,21 @@
+// COLOR PALETTE
+// CSS CUSTOM PROPERTIES
+
 :root {
   --bg-primary-one: #141414;
 
   --bg-primary-two: #363636;
 
-  --text-accent-one: #1f2733;
+  // TESTING DESIGN
+  
+  // --text-accent-one: #1f2733;
 
-  --text-accent-two: #8c2155;
+  // --text-accent-two: #8c2155;
 
   --text-accent-three: hsl(165, 78%, 41%);
 }
+
+// CLASSES
 
 .bg-primary-one {
   background-color: var(--bg-primary-one);
