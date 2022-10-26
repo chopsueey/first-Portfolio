@@ -3,16 +3,18 @@
 }
 
 .form-control:focus {
-    box-shadow: none;
-    outline: 2px solid var(--text-accent-three);
+  box-shadow: 1px 1px 8px var(--text-accent-three),
+    -1px -1px 8px var(--text-accent-three);
+  // outline: 2px solid var(--text-accent-three);
 }
 
 textarea {
   width: 100%;
 }
 
-input[text]:focus, textarea:focus {
-    border-color: var(--text-accent-three);
+input[text]:focus,
+textarea:focus {
+  border-color: var(--text-accent-three);
 }
 
 .button-two {
