@@ -92,6 +92,7 @@ li {
 
 a {
   color: white;
+  position: relative;
 }
 
 a:hover {
@@ -104,11 +105,25 @@ a:hover {
 
 .nav-link:hover {
   color: white;
-  text-decoration: underline;
 }
 
 .link:hover {
   color: white;
+}
+
+.link-effect::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: var(--text-accent-three);
+  bottom: 5px;
+  right: 0;
+  transition: width 150ms linear;
+}
+
+.link-effect:hover::before {
+  width: 100%;
 }
 
 .portrait {
