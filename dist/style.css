@@ -129,8 +129,7 @@ a:hover {
 .portrait {
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   mix-blend-mode: luminosity;
 }
 
@@ -142,8 +141,7 @@ a:hover {
 .img-box img {
   width: 80%;
   aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: scale 500ms 100ms ease, opacity 350ms 100ms linear, filter 350ms 100ms linear;
 }
 
@@ -198,7 +196,7 @@ a:hover {
   margin: 10px 0 0 0;
   padding: 0 20px;
   color: #ffffff;
-  background-color: hsl(165deg, 78%, 41%);
+  background-color: hsl(165, 78%, 41%);
   text-shadow: 2px 2px 4px black;
   background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.6));
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -211,7 +209,7 @@ a:hover {
 .button:hover {
   opacity: 100;
   scale: 1;
-  background-color: hsl(165deg, 59%, 50%);
+  background-color: hsl(165, 59%, 50%);
 }
 
 .button:active {
@@ -270,7 +268,7 @@ textarea:focus {
   margin-top: 20px;
   font-size: 30px;
   color: #ffffff;
-  background-color: hsl(165deg, 78%, 41%);
+  background-color: hsl(165, 78%, 41%);
   border-radius: 10px;
   text-shadow: 2px 2px 4px black;
   background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.6));
@@ -279,7 +277,7 @@ textarea:focus {
 }
 
 .button-two:hover {
-  background-color: hsl(165deg, 59%, 50%);
+  background-color: hsl(165, 59%, 50%);
 }
 
 .button-two:active {
@@ -296,12 +294,13 @@ textarea:focus {
     background-position-x: center;
     background-position-y: 5%;
     background-size: 90%;
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
   }
 }
 @media screen and (min-width: 1600px) {
   .section-height {
     min-height: 80vh;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
