@@ -3,4 +3,4 @@
 ![hero-section of the portfolio](https://i.imgur.com/Xja9clm.png)
 
 
-#### This is my first Portfolio using sass(scss) and bootstrap.
+#### This is my Portfolio using sass(scss) and bootstrap.
